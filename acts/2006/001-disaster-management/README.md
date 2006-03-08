@@ -5,7 +5,7 @@ Government of Eswatini (gov.sz), archived copy: http://www.gov.sz/images/justice
 | File | Section |
 | --- | --- |
 | [sec-001](sec-001.md) | Section 1 |
-| [sec-002](sec-002.md) | Section 2. Short title and commencement. This Act may be cited as the Disaster Management Act, 2006 |
+| [sec-002](sec-002.md) | Section 2. This Act may be cited as the Disaster Management Act, 2006 |
 | [sec-003](sec-003.md) | Section 3 |
 | [sec-004](sec-004.md) | Section 4 |
 | [sec-005](sec-005.md) | Section 5 |
@@ -41,7 +41,7 @@ Government of Eswatini (gov.sz), archived copy: http://www.gov.sz/images/justice
 | [sec-035](sec-035.md) | Section 35 |
 | [sec-036](sec-036.md) | Section 36 |
 | [sec-037](sec-037.md) | Section 37 |
-| [sec-038](sec-038.md) | Section 38. Disbursements. There shall be paid out of the Fund any expenses as may be approved by the Minister |
+| [sec-038](sec-038.md) | Section 38 |
 | [sec-039](sec-039.md) | Section 39 |
 | [sec-040](sec-040.md) | Section 40 |
 | [sec-041](sec-041.md) | Section 41 |
