@@ -1,6 +1,6 @@
 # Public Finance Management Act
 
-Government of Eswatini (gov.sz), archived copy: http://www.gov.sz/images/justice/GAZETTES/Extra-Ord.-No.-96.pdf
+Government of Eswatini (gov.sz), archived copy: https://gov.sz/images/justice/Public-Finance-Management-Act-2017-2.pdf
 
 | File | Section |
 | --- | --- |
@@ -69,11 +69,11 @@ Government of Eswatini (gov.sz), archived copy: http://www.gov.sz/images/justice
 | [sec-063](sec-063.md) | Section 63. Power to execute loans |
 | [sec-064](sec-064.md) | Section 64. Local Government borrowing |
 | [sec-065](sec-065.md) | Section 65. Securities |
-| [sec-066](sec-066.md) | Section 66. Execution of security |
+| [sec-066](sec-066.md) | Section 66 |
 | [sec-067](sec-067.md) | Section 67. Variation of terms of and conditions of public security |
 | [sec-068](sec-068.md) | Section 68. Replacing a public security |
 | [sec-069](sec-069.md) | Section 69. Payment of security |
-| [sec-070](sec-070.md) | Section 70. Expenses on public security |
+| [sec-070](sec-070.md) | Section 70 |
 | [sec-071](sec-071.md) | Section 71. Local Government securities |
 | [sec-072](sec-072.md) | Section 72. Debt reporting |
 | [sec-073](sec-073.md) | Section 73. Limits on lending by the Government |
@@ -89,7 +89,7 @@ Government of Eswatini (gov.sz), archived copy: http://www.gov.sz/images/justice
 | [sec-083](sec-083.md) | Section 83. Functions and powers of Audit Committee |
 | [sec-084](sec-084.md) | Section 84 |
 | [sec-085](sec-085.md) | Section 85. Accounting standards |
-| [sec-086](sec-086.md) | Section 86. In-year Government level reporting and entity level reporting |
+| [sec-086](sec-086.md) | Section 86 |
 | [sec-087](sec-087.md) | Section 87. Annual Government level reporting and entity level reporting and audit |
 | [sec-088](sec-088.md) | Section 88. Consideration of annual accounts and reports by Parliament |
 | [sec-089](sec-089.md) | Section 89 |
@@ -100,8 +100,8 @@ Government of Eswatini (gov.sz), archived copy: http://www.gov.sz/images/justice
 | [sec-094](sec-094.md) | Section 94. Service agreements |
 | [sec-095](sec-095.md) | Section 95. Review of performance of a ministry |
 | [sec-096](sec-096.md) | Section 96. Annual plans and annual budgets for an Agency |
-| [sec-097](sec-097.md) | Section 97. Reporting by an Agency and auditing of reports |
-| [sec-098](sec-098.md) | Section 98. Service agreements for an agency |
+| [sec-097](sec-097.md) | Section 97 |
+| [sec-098](sec-098.md) | Section 98 |
 | [sec-099](sec-099.md) | Section 99. Review of an agency |
 | [sec-100](sec-100.md) | Section 100. Statement of corporate intent and annual plan for a Government business enterprise |
 | [sec-101](sec-101.md) | Section 101. Service Agreement for a Government business enterprise |
@@ -114,7 +114,7 @@ Government of Eswatini (gov.sz), archived copy: http://www.gov.sz/images/justice
 | [sec-108](sec-108.md) | Section 108. Criminal proceedings |
 | [sec-109](sec-109.md) | Section 109. Institutional sanctions |
 | [sec-110](sec-110.md) | Section 110. Personal responsibility for losses |
-| [sec-111](sec-111.md) | Section 111. Entity responsibility for losses |
+| [sec-111](sec-111.md) | Section 111 |
 | [sec-112](sec-112.md) | Section 112. Losses Committee |
 | [sec-113](sec-113.md) | Section 113. Recovery of losses |
 | [sec-114](sec-114.md) | Section 114. Surcharge |
