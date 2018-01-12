@@ -1,4 +1,4 @@
-# Section 34A
+# Section 34A. Interim Payments
 
 (1) In an action for damages for personal injuries or the death of a person, the plaintiff may, at any time after the expiry of the period of the delivery of the notice of intention to defend, apply to the court for an order requiring the defendant to make an interim payment in respect of his claim for medical costs and loss of income arising from his physical disability or the death of a person.
 
@@ -30,4 +30,4 @@
 
 (c) a payment be made by any other defendant in respect of any part of the interim payment which the defendant, who made it, is entitled to recover by way of contribution or indemnity or in respect of any remedy or relief relating to the plaintiff’s claim.
 
-(11) The provisions of this rule shall apply mutatis mutandis to any claim in reconvention. (Added L.N.38/1990.) Discovery, Inspection and Production of documents and Tape recordings.
+(11) The provisions of this rule shall apply mutatis mutandis to any claim in reconvention. (Added L.N.38/1990.)

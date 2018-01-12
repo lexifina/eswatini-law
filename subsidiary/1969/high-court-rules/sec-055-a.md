@@ -1,4 +1,4 @@
-# Section 55A
+# Section 55A. Allocation of hearing Dates
 
 (1) After the close of pleadings in an action, and subject to rule 37, any of the parties thereto may deliver a notice requesting the Registrar to allocate a date of hearing.
 
@@ -16,4 +16,4 @@
 
 (c) any matter which the court may specifically direct to be listed for hearing.
 
-(4) Within a reasonable time of receipt of such notice the Registrar shall allocate a date for hearing. (Added L.N.38/1990.) Set Down.
+(4) Within a reasonable time of receipt of such notice the Registrar shall allocate a date for hearing. (Added L.N.38/1990.)
