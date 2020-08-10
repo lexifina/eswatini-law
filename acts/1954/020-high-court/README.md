@@ -5,7 +5,7 @@ Government of Eswatini (gov.sz), archived copy: http://www.gov.sz/images/justice
 | File | Section |
 | --- | --- |
 | [sec-001](sec-001.md) | Section 1. Tariff of Fees of Attorneys and Advocates |
-| [sec-002](sec-002.md) | Section 2. Citation. These rules may be cited as the High Court Rules |
+| [sec-002](sec-002.md) | Section 2. These rules may be cited as the High Court Rules |
 | [sec-003](sec-003.md) | Section 3 |
 | [sec-004](sec-004.md) | Section 4 |
 | [sec-005](sec-005.md) | Section 5 |
