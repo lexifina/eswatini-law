@@ -55,31 +55,17 @@
    "label": "Act 1 of 2005"
   },
   {
-   "work": "1980/5",
-   "slug": "employment",
-   "short": "Employment Act",
-   "title": "Employment Act, 1980",
-   "label": "Act 5 of 1980"
-  },
-  {
-   "work": "2009/8",
-   "slug": "companies",
-   "short": "Companies Act",
-   "title": "Companies Act, 2009",
-   "label": "Act 8 of 2009"
-  },
-  {
    "work": "2008/3",
-   "slug": "act-2008-3",
-   "short": "2008/3",
-   "title": "2008/3",
+   "slug": "suppression-of-terrorism",
+   "short": "Suppression of Terrorism Act",
+   "title": "Suppression of Terrorism Act, 2008",
    "label": "Act 3 of 2008"
   },
   {
    "work": "2011/6",
-   "slug": "act-2011-6",
-   "short": "2011/6",
-   "title": "2011/6",
+   "slug": "money-laundering",
+   "short": "MLFTP Act",
+   "title": "Money Laundering and Financing of Terrorism (Prevention) Act, 2011",
    "label": "Act 6 of 2011"
   }
  ],
