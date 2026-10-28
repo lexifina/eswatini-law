@@ -1,0 +1,113 @@
+{
+ "acts": {
+  "constitution": [
+   {
+    "from": "2005-07-26",
+    "units": 283,
+    "changed": 0,
+    "credited": 0
+   }
+  ],
+  "constitution:listing": {
+   "lii_current": "2005-07-26",
+   "ours": "2005-07-26",
+   "ok": true
+  },
+  "suppression-of-terrorism": [
+   {
+    "from": "2008-04-11",
+    "units": 44,
+    "changed": 0,
+    "credited": 0
+   },
+   {
+    "from": "2017-08-25",
+    "units": 44,
+    "changed": 10,
+    "credited": 10
+   }
+  ],
+  "suppression-of-terrorism:listing": {
+   "lii_current": "2017-08-25",
+   "ours": "2017-08-25",
+   "ok": true
+  },
+  "money-laundering": [
+   {
+    "from": "2011-08-23",
+    "units": 97,
+    "changed": 0,
+    "credited": 0
+   },
+   {
+    "from": "2016-09-28",
+    "units": 115,
+    "changed": 55,
+    "credited": 55
+   }
+  ],
+  "money-laundering:listing": {
+   "lii_current": "2016-09-28",
+   "ours": "2016-09-28",
+   "ok": true
+  }
+ },
+ "fidelity": {
+  "constitution@2005-07-26": {
+   "units": 283,
+   "units_differing": [],
+   "text_outside_units_chars": 0,
+   "text_outside_units_sample": ""
+  },
+  "suppression-of-terrorism@2008-04-11": {
+   "units": 44,
+   "units_differing": [],
+   "text_outside_units_chars": 0,
+   "text_outside_units_sample": ""
+  },
+  "suppression-of-terrorism@2017-08-25": {
+   "units": 44,
+   "units_differing": [],
+   "text_outside_units_chars": 0,
+   "text_outside_units_sample": ""
+  },
+  "money-laundering@2011-08-23": {
+   "units": 97,
+   "units_differing": [],
+   "text_outside_units_chars": 0,
+   "text_outside_units_sample": ""
+  },
+  "money-laundering@2016-09-28": {
+   "units": 115,
+   "units_differing": [],
+   "text_outside_units_chars": 0,
+   "text_outside_units_sample": ""
+  }
+ },
+ "law_dates": {
+  "act-2005-1": {
+   "commenced": null,
+   "dated": []
+  },
+  "act-2008-3": {
+   "commenced": null,
+   "dated": []
+  },
+  "act-2011-6": {
+   "commenced": null,
+   "dated": []
+  },
+  "act-2016-5": {
+   "commenced": null,
+   "dated": [
+    "2016-09-28"
+   ]
+  },
+  "act-2017-11": {
+   "commenced": null,
+   "dated": [
+    "2017-08-25"
+   ]
+  }
+ }
+}
