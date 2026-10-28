@@ -4,45 +4,31 @@
   "2005/1": {
    "expressions": {
     "2005-07-26": {
+     "via": "wayback",
      "capture": "20251209103645",
      "original": "https://eswatinilii.org/akn/sz/act/2005/1/eng@2005-07-26",
      "url": "https://web.archive.org/web/20251209103645id_/https://eswatinilii.org/akn/sz/act/2005/1/eng@2005-07-26",
+     "source_url": "https://web.archive.org/web/20251209103645id_/https://eswatinilii.org/akn/sz/act/2005/1/eng@2005-07-26",
      "sha256": "72c47eaf422ec2327d6b1ec2ebe616464c878678605a91868a0977abbdb46fc2"
-    }
-   }
-  },
-  "1980/5": {
-   "expressions": {
-    "1998-12-01": {
-     "capture": "20260310214051",
-     "original": "https://eswatinilii.org/akn/sz/act/1980/5/eng@1998-12-01",
-     "url": "https://web.archive.org/web/20260310214051id_/https://eswatinilii.org/akn/sz/act/1980/5/eng@1998-12-01",
-     "sha256": "0696634643bb34a6ac9c69cfa31f96c7d356cc4cc9fbf3be2f9e904ae4b9254f"
-    }
-   }
-  },
-  "2009/8": {
-   "expressions": {
-    "1998-12-01": {
-     "capture": "20260125094041",
-     "original": "https://eswatinilii.org/akn/sz/act/2009/8/eng@1998-12-01",
-     "url": "https://web.archive.org/web/20260125094041id_/https://eswatinilii.org/akn/sz/act/2009/8/eng@1998-12-01",
-     "sha256": "0ce24c9d39c7724cc95d3183b681dca93a0eddee719f9ec20987327ed1a1e9a9"
     }
    }
   },
   "2008/3": {
    "expressions": {
     "2008-04-11": {
+     "via": "wayback",
      "capture": "20250612221137",
      "original": "https://eswatinilii.org/akn/sz/act/2008/3/eng@2008-04-11",
      "url": "https://web.archive.org/web/20250612221137id_/https://eswatinilii.org/akn/sz/act/2008/3/eng@2008-04-11",
+     "source_url": "https://web.archive.org/web/20250612221137id_/https://eswatinilii.org/akn/sz/act/2008/3/eng@2008-04-11",
      "sha256": "4a45c308aa1524264b34220f35897d6b724c14d737f4a1f361877a1ca93bc19a"
     },
     "2017-08-25": {
+     "via": "wayback",
      "capture": "20260420024554",
      "original": "https://eswatinilii.org/akn/sz/act/2008/3/eng@2017-08-25",
      "url": "https://web.archive.org/web/20260420024554id_/https://eswatinilii.org/akn/sz/act/2008/3/eng@2017-08-25",
+     "source_url": "https://web.archive.org/web/20260420024554id_/https://eswatinilii.org/akn/sz/act/2008/3/eng@2017-08-25",
      "sha256": "5af662aac3857e1957888a8906027f047c337a2766767a74b75accffdf0560a9"
     }
    }
@@ -50,15 +36,19 @@
   "2011/6": {
    "expressions": {
     "2011-08-23": {
+     "via": "wayback",
      "capture": "20250328002313",
      "original": "https://eswatinilii.org/akn/sz/act/2011/6/eng@2011-08-23",
      "url": "https://web.archive.org/web/20250328002313id_/https://eswatinilii.org/akn/sz/act/2011/6/eng@2011-08-23",
+     "source_url": "https://web.archive.org/web/20250328002313id_/https://eswatinilii.org/akn/sz/act/2011/6/eng@2011-08-23",
      "sha256": "8874011c28fd2278afae7af9c3ee5d12167a271c6932c20afd3a94dd8feb76f8"
     },
     "2016-09-28": {
+     "via": "wayback",
      "capture": "20260310214431",
      "original": "https://eswatinilii.org/akn/sz/act/2011/6/eng@2016-09-28",
      "url": "https://web.archive.org/web/20260310214431id_/https://eswatinilii.org/akn/sz/act/2011/6/eng@2016-09-28",
+     "source_url": "https://web.archive.org/web/20260310214431id_/https://eswatinilii.org/akn/sz/act/2011/6/eng@2016-09-28",
      "sha256": "552cc9400f10045bd2e669727b46e160112469fd35905d82be4c61d7ab24ab78"
     }
    }
@@ -67,8 +57,6 @@
  "laws": {},
  "listings": {
   "2005/1": "https://eswatinilii.org/legislation/?years=2005",
-  "1980/5": "https://eswatinilii.org/legislation/?years=1980",
-  "2009/8": "https://eswatinilii.org/legislation/?years=2009",
   "2008/3": "https://eswatinilii.org/legislation/?years=2008",
   "2011/6": "https://eswatinilii.org/legislation/?years=2011"
  },
