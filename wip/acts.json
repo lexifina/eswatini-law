@@ -73,5 +73,15 @@
  "ai_use": [
   "Claude Code (Claude Opus 5.5, claude-opus-5-5) wrote the adapter and configuration and chose the acts. No model wrote, summarised or transformed legal text: parse.py is deterministic code."
  ],
- "law_pages": true
+ "law_pages": false,
+ "law_pages_pinned": {
+  "/akn/sz/act/2016/5": {
+   "expression": "2016-09-28",
+   "capture": "20260420221703"
+  },
+  "/akn/sz/act/2017/11": {
+   "expression": "2017-08-25",
+   "capture": "20260418004949"
+  }
+ }
 }

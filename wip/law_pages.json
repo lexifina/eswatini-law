@@ -1,0 +1,14 @@
+{
+ "/akn/sz/act/2016/5": {
+  "url": "https://web.archive.org/web/20260420221703id_/https://eswatinilii.org/akn/sz/act/2016/5/eng@2016-09-28",
+  "capture": "20260420221703",
+  "expression": "2016-09-28",
+  "sha256": "ad6280b3b27cffb3ce41a58ccb56f4723d523d578b4218fd3a2cf3491b6c19b9"
+ },
+ "/akn/sz/act/2017/11": {
+  "url": "https://web.archive.org/web/20260418004949id_/https://eswatinilii.org/akn/sz/act/2017/11/eng@2017-08-25",
+  "capture": "20260418004949",
+  "expression": "2017-08-25",
+  "sha256": "e8e1ea2309137bddf8675014f237e33c216ae45dc1e4b40c612445576428e656"
+ }
+}

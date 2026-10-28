@@ -19,6 +19,10 @@ sys.path.insert(0, str(HERE))
 import peachjam  # noqa: E402
 
 corpus, report = peachjam.parse(HERE)
+
+import lii  # noqa: E402  (local: dates of the PDF-only amending Acts, see lii.py)
+
+lii.enrich(peachjam, corpus, report)
 peachjam.write_corpus(HERE, corpus)
 peachjam.write_docs(HERE, corpus)
 (HERE / "verification.json").write_text(json.dumps(report, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
