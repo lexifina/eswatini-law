@@ -2,86 +2,96 @@
  "acts": {
   "constitution": [
    {
-    "from": "2005-07-26",
-    "units": 283,
     "changed": 0,
-    "credited": 0
+    "credited": 0,
+    "from": "2005-07-26",
+    "units": 283
    }
   ],
   "constitution:listing": {
    "lii_current": "2005-07-26",
-   "ours": "2005-07-26",
-   "ok": true
-  },
-  "suppression-of-terrorism": [
-   {
-    "from": "2008-04-11",
-    "units": 44,
-    "changed": 0,
-    "credited": 0
-   },
-   {
-    "from": "2017-08-25",
-    "units": 44,
-    "changed": 10,
-    "credited": 10
-   }
-  ],
-  "suppression-of-terrorism:listing": {
-   "lii_current": "2017-08-25",
-   "ours": "2017-08-25",
-   "ok": true
+   "ok": true,
+   "ours": "2005-07-26"
   },
   "money-laundering": [
    {
-    "from": "2011-08-23",
-    "units": 97,
     "changed": 0,
-    "credited": 0
+    "credited": 0,
+    "from": "2011-08-23",
+    "units": 97
    },
    {
-    "from": "2016-09-28",
-    "units": 115,
     "changed": 55,
-    "credited": 55
+    "credited": 55,
+    "from": "2016-09-28",
+    "units": 115
    }
   ],
   "money-laundering:listing": {
    "lii_current": "2016-09-28",
-   "ours": "2016-09-28",
-   "ok": true
+   "ok": true,
+   "ours": "2016-09-28"
+  },
+  "suppression-of-terrorism": [
+   {
+    "changed": 0,
+    "credited": 0,
+    "from": "2008-04-11",
+    "units": 44
+   },
+   {
+    "changed": 10,
+    "credited": 10,
+    "from": "2017-08-25",
+    "units": 44
+   }
+  ],
+  "suppression-of-terrorism:listing": {
+   "lii_current": "2017-08-25",
+   "ok": true,
+   "ours": "2017-08-25"
   }
+ },
+ "check": {
+  "acts": 3,
+  "backwards": 0,
+  "future_dated": 0,
+  "merges": 0,
+  "mismatches": 0,
+  "missing_in_force": 0,
+  "trailer_errors": 0,
+  "versions": 5
  },
  "fidelity": {
   "constitution@2005-07-26": {
+   "text_outside_units_chars": 0,
+   "text_outside_units_sample": "",
    "units": 283,
-   "units_differing": [],
-   "text_outside_units_chars": 0,
-   "text_outside_units_sample": ""
-  },
-  "suppression-of-terrorism@2008-04-11": {
-   "units": 44,
-   "units_differing": [],
-   "text_outside_units_chars": 0,
-   "text_outside_units_sample": ""
-  },
-  "suppression-of-terrorism@2017-08-25": {
-   "units": 44,
-   "units_differing": [],
-   "text_outside_units_chars": 0,
-   "text_outside_units_sample": ""
+   "units_differing": []
   },
   "money-laundering@2011-08-23": {
-   "units": 97,
-   "units_differing": [],
    "text_outside_units_chars": 0,
-   "text_outside_units_sample": ""
+   "text_outside_units_sample": "",
+   "units": 97,
+   "units_differing": []
   },
   "money-laundering@2016-09-28": {
-   "units": 115,
-   "units_differing": [],
    "text_outside_units_chars": 0,
-   "text_outside_units_sample": ""
+   "text_outside_units_sample": "",
+   "units": 115,
+   "units_differing": []
+  },
+  "suppression-of-terrorism@2008-04-11": {
+   "text_outside_units_chars": 0,
+   "text_outside_units_sample": "",
+   "units": 44,
+   "units_differing": []
+  },
+  "suppression-of-terrorism@2017-08-25": {
+   "text_outside_units_chars": 0,
+   "text_outside_units_sample": "",
+   "units": 44,
+   "units_differing": []
   }
  },
  "law_dates": {
