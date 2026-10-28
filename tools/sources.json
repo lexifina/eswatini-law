@@ -1,0 +1,76 @@
+{
+ "lii": "EswatiniLII",
+ "acts": {
+  "2005/1": {
+   "expressions": {
+    "2005-07-26": {
+     "via": "wayback",
+     "capture": "20251209103645",
+     "original": "https://eswatinilii.org/akn/sz/act/2005/1/eng@2005-07-26",
+     "url": "https://web.archive.org/web/20251209103645id_/https://eswatinilii.org/akn/sz/act/2005/1/eng@2005-07-26",
+     "source_url": "https://web.archive.org/web/20251209103645id_/https://eswatinilii.org/akn/sz/act/2005/1/eng@2005-07-26",
+     "sha256": "72c47eaf422ec2327d6b1ec2ebe616464c878678605a91868a0977abbdb46fc2"
+    }
+   }
+  },
+  "2008/3": {
+   "expressions": {
+    "2008-04-11": {
+     "via": "wayback",
+     "capture": "20250612221137",
+     "original": "https://eswatinilii.org/akn/sz/act/2008/3/eng@2008-04-11",
+     "url": "https://web.archive.org/web/20250612221137id_/https://eswatinilii.org/akn/sz/act/2008/3/eng@2008-04-11",
+     "source_url": "https://web.archive.org/web/20250612221137id_/https://eswatinilii.org/akn/sz/act/2008/3/eng@2008-04-11",
+     "sha256": "4a45c308aa1524264b34220f35897d6b724c14d737f4a1f361877a1ca93bc19a"
+    },
+    "2017-08-25": {
+     "via": "commoncrawl",
+     "crawl": "CC-MAIN-2026-17",
+     "capture": "20260420024554",
+     "original": "https://eswatinilii.org/akn/sz/act/2008/3/eng@2017-08-25",
+     "url": "cc:crawl-data/CC-MAIN-2026-17/segments/1775805909571.51/warc/CC-MAIN-20260420022045-20260420052045-00537.warc.gz:179073101:38602",
+     "filename": "crawl-data/CC-MAIN-2026-17/segments/1775805909571.51/warc/CC-MAIN-20260420022045-20260420052045-00537.warc.gz",
+     "offset": "179073101",
+     "length": "38602",
+     "source_url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-17/segments/1775805909571.51/warc/CC-MAIN-20260420022045-20260420052045-00537.warc.gz#bytes=179073101-179111702",
+     "sha256": "df04c464534e0d614cb25252243e7e2bd231d47526dbc3986d9b2a2f7fe789ec"
+    }
+   }
+  },
+  "2011/6": {
+   "expressions": {
+    "2011-08-23": {
+     "via": "wayback",
+     "capture": "20250328002313",
+     "original": "https://eswatinilii.org/akn/sz/act/2011/6/eng@2011-08-23",
+     "url": "https://web.archive.org/web/20250328002313id_/https://eswatinilii.org/akn/sz/act/2011/6/eng@2011-08-23",
+     "source_url": "https://web.archive.org/web/20250328002313id_/https://eswatinilii.org/akn/sz/act/2011/6/eng@2011-08-23",
+     "sha256": "8874011c28fd2278afae7af9c3ee5d12167a271c6932c20afd3a94dd8feb76f8"
+    },
+    "2016-09-28": {
+     "via": "commoncrawl",
+     "crawl": "CC-MAIN-2026-12",
+     "capture": "20260310214431",
+     "original": "https://eswatinilii.org/akn/sz/act/2011/6/eng@2016-09-28",
+     "url": "cc:crawl-data/CC-MAIN-2026-12/segments/1772687277908.12/warc/CC-MAIN-20260310210210-20260311000210-00423.warc.gz:158155739:91719",
+     "filename": "crawl-data/CC-MAIN-2026-12/segments/1772687277908.12/warc/CC-MAIN-20260310210210-20260311000210-00423.warc.gz",
+     "offset": "158155739",
+     "length": "91719",
+     "source_url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-12/segments/1772687277908.12/warc/CC-MAIN-20260310210210-20260311000210-00423.warc.gz#bytes=158155739-158247457",
+     "sha256": "371215b0f358437c8228764454bb16bd7a36e2c975ffa8c37ca80455cdc9df5e"
+    }
+   }
+  }
+ },
+ "laws": {
+  "/akn/sz/act/2016/5": null,
+  "/akn/sz/act/2017/11": null,
+  "/akn/sz/act/p/2006/1": null
+ },
+ "listings": {
+  "2005/1": "https://eswatinilii.org/legislation/?years=2005",
+  "2008/3": "https://eswatinilii.org/legislation/?years=2008",
+  "2011/6": "https://eswatinilii.org/legislation/?years=2011"
+ },
+ "retrieved": "2026-10-28"
+}

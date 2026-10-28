@@ -1,0 +1,59 @@
+{
+ "country": "SZ",
+ "acts": [
+  {
+   "slug": "constitution",
+   "short": "Constitution",
+   "title": "Constitution of the Kingdom of Swaziland, 2005",
+   "url": "https://eswatinilii.org/akn/sz/act/2005/1",
+   "versions": [
+    {
+     "from": "2006-02-08",
+     "units": 283,
+     "source_url": "https://web.archive.org/web/20251209103645id_/https://eswatinilii.org/akn/sz/act/2005/1/eng@2005-07-26",
+     "sha256": "72c47eaf422ec2327d6b1ec2ebe616464c878678605a91868a0977abbdb46fc2"
+    }
+   ]
+  },
+  {
+   "slug": "suppression-of-terrorism",
+   "short": "Suppression of Terrorism Act",
+   "title": "Suppression of Terrorism Act, 2008",
+   "url": "https://eswatinilii.org/akn/sz/act/2008/3",
+   "versions": [
+    {
+     "from": "2008-05-11",
+     "units": 44,
+     "source_url": "https://web.archive.org/web/20250612221137id_/https://eswatinilii.org/akn/sz/act/2008/3/eng@2008-04-11",
+     "sha256": "4a45c308aa1524264b34220f35897d6b724c14d737f4a1f361877a1ca93bc19a"
+    },
+    {
+     "from": "2017-08-25",
+     "units": 44,
+     "source_url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-17/segments/1775805909571.51/warc/CC-MAIN-20260420022045-20260420052045-00537.warc.gz#bytes=179073101-179111702",
+     "sha256": "df04c464534e0d614cb25252243e7e2bd231d47526dbc3986d9b2a2f7fe789ec"
+    }
+   ]
+  },
+  {
+   "slug": "money-laundering",
+   "short": "Money Laundering Act",
+   "title": "Money Laundering and Financing of Terrorism (Prevention) Act, 2011",
+   "url": "https://eswatinilii.org/akn/sz/act/2011/6",
+   "versions": [
+    {
+     "from": "2012-03-23",
+     "units": 97,
+     "source_url": "https://web.archive.org/web/20250328002313id_/https://eswatinilii.org/akn/sz/act/2011/6/eng@2011-08-23",
+     "sha256": "8874011c28fd2278afae7af9c3ee5d12167a271c6932c20afd3a94dd8feb76f8"
+    },
+    {
+     "from": "2016-09-28",
+     "units": 115,
+     "source_url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-12/segments/1772687277908.12/warc/CC-MAIN-20260310210210-20260311000210-00423.warc.gz#bytes=158155739-158247457",
+     "sha256": "371215b0f358437c8228764454bb16bd7a36e2c975ffa8c37ca80455cdc9df5e"
+    }
+   ]
+  }
+ ]
+}
