@@ -2,96 +2,106 @@
  "acts": {
   "constitution": [
    {
-    "changed": 0,
-    "credited": 0,
     "from": "2005-07-26",
-    "units": 283
+    "units": 283,
+    "changed": 0,
+    "credited": 0
    }
   ],
+  "constitution:archive": {
+   "last_version": "2005-07-26",
+   "captured": "20251209103645",
+   "via": "wayback",
+   "history_after_last": [
+    "2006-02-08"
+   ]
+  },
   "constitution:listing": {
    "lii_current": "2005-07-26",
-   "ok": true,
-   "ours": "2005-07-26"
-  },
-  "money-laundering": [
-   {
-    "changed": 0,
-    "credited": 0,
-    "from": "2011-08-23",
-    "units": 97
-   },
-   {
-    "changed": 55,
-    "credited": 55,
-    "from": "2016-09-28",
-    "units": 115
-   }
-  ],
-  "money-laundering:listing": {
-   "lii_current": "2016-09-28",
-   "ok": true,
-   "ours": "2016-09-28"
+   "ours": "2005-07-26",
+   "ok": true
   },
   "suppression-of-terrorism": [
    {
-    "changed": 0,
-    "credited": 0,
     "from": "2008-04-11",
-    "units": 44
+    "units": 44,
+    "changed": 0,
+    "credited": 0
    },
    {
-    "changed": 10,
-    "credited": 10,
     "from": "2017-08-25",
-    "units": 44
+    "units": 44,
+    "changed": 10,
+    "credited": 10
    }
   ],
+  "suppression-of-terrorism:archive": {
+   "last_version": "2017-08-25",
+   "captured": "20260420024554",
+   "via": "commoncrawl",
+   "history_after_last": []
+  },
   "suppression-of-terrorism:listing": {
    "lii_current": "2017-08-25",
-   "ok": true,
-   "ours": "2017-08-25"
+   "ours": "2017-08-25",
+   "ok": true
+  },
+  "money-laundering": [
+   {
+    "from": "2011-08-23",
+    "units": 97,
+    "changed": 0,
+    "credited": 0
+   },
+   {
+    "from": "2016-09-28",
+    "units": 115,
+    "changed": 55,
+    "credited": 55
+   }
+  ],
+  "money-laundering:archive": {
+   "last_version": "2016-09-28",
+   "captured": "20260310214431",
+   "via": "commoncrawl",
+   "history_after_last": []
+  },
+  "money-laundering:listing": {
+   "lii_current": "2016-09-28",
+   "ours": "2016-09-28",
+   "ok": true
   }
- },
- "check": {
-  "acts": 3,
-  "backwards": 0,
-  "future_dated": 0,
-  "merges": 0,
-  "mismatches": 0,
-  "missing_in_force": 0,
-  "trailer_errors": 0,
-  "versions": 5
  },
  "fidelity": {
   "constitution@2005-07-26": {
-   "text_outside_units_chars": 0,
-   "text_outside_units_sample": "",
    "units": 283,
-   "units_differing": []
-  },
-  "money-laundering@2011-08-23": {
+   "units_differing": [],
    "text_outside_units_chars": 0,
-   "text_outside_units_sample": "",
-   "units": 97,
-   "units_differing": []
-  },
-  "money-laundering@2016-09-28": {
-   "text_outside_units_chars": 0,
-   "text_outside_units_sample": "",
-   "units": 115,
-   "units_differing": []
+   "text_outside_units_sample": ""
   },
   "suppression-of-terrorism@2008-04-11": {
-   "text_outside_units_chars": 0,
-   "text_outside_units_sample": "",
    "units": 44,
-   "units_differing": []
+   "units_differing": [],
+   "text_outside_units_chars": 0,
+   "text_outside_units_sample": ""
   },
   "suppression-of-terrorism@2017-08-25": {
-   "text_outside_units_chars": 0,
-   "text_outside_units_sample": "",
    "units": 44,
-   "units_differing": []
+   "units_differing": [],
+   "text_outside_units_chars": 0,
+   "text_outside_units_sample": ""
+  },
+  "money-laundering@2011-08-23": {
+   "units": 97,
+   "units_differing": [],
+   "text_outside_units_chars": 0,
+   "text_outside_units_sample": ""
+  },
+  "money-laundering@2016-09-28": {
+   "units": 115,
+   "units_differing": [],
+   "text_outside_units_chars": 0,
+   "text_outside_units_sample": ""
   }
  },
  "law_dates": {
@@ -108,16 +118,20 @@
    "dated": []
   },
   "act-2016-5": {
-   "commenced": null,
+   "commenced": "2016-09-28",
    "dated": [
     "2016-09-28"
-   ]
+   ],
+   "ok": true,
+   "page": "https://web.archive.org/web/20260420221703id_/https://eswatinilii.org/akn/sz/act/2016/5/eng@2016-09-28"
   },
   "act-2017-11": {
-   "commenced": null,
+   "commenced": "2017-08-25",
    "dated": [
     "2017-08-25"
-   ]
+   ],
+   "ok": true,
+   "page": "https://web.archive.org/web/20260418004949id_/https://eswatinilii.org/akn/sz/act/2017/11/eng@2017-08-25"
   }
  }
 }

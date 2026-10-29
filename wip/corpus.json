@@ -21,7 +21,7 @@
    "name": "EswatiniLII (the Judiciary of Eswatini, on the Laws.Africa Peachjam platform)",
    "url": "https://eswatinilii.org",
    "retrieved": "2026-10-28",
-   "requests": 53,
+   "requests": 67,
    "licence": "CC BY-NC 4.0, crediting EswatiniLII as the source (https://eswatinilii.org/terms-of-use/)",
    "notes": "Point-in-time expressions of each act, /akn/sz/act/<year>/<num>/eng@<date>. Each expression page is read from its latest Internet Archive capture (raw id_ form), never from EswatiniLII's own document pages; the capture timestamps and sha256s are pinned in sources.json. Request count covers the Internet Archive and EswatiniLII's open listing pages."
   },
@@ -32,6 +32,14 @@
    "requests": null,
    "licence": "Archived copies of EswatiniLII pages; the content licence is EswatiniLII's",
    "notes": "CDX API for discovery, then https://web.archive.org/web/<timestamp>id_/<original url> for the page bytes."
+  },
+  {
+   "name": "Common Crawl",
+   "url": "https://commoncrawl.org",
+   "retrieved": "2026-10-28",
+   "requests": null,
+   "licence": "Common Crawl terms of use (https://commoncrawl.org/terms-of-use); the content's licence is EswatiniLII's",
+   "notes": "Archived copies of EswatiniLII expression pages from crawls CC-MAIN-2026-12, CC-MAIN-2026-17, read by byte range from the WARC files on data.commoncrawl.org; crawl, file, offset and length are pinned in sources.json. Pages Common Crawl lacks were read from the Internet Archive."
   }
  ],
  "laws": {
@@ -72,8 +80,8 @@
    "label": "Act 5 of 2016",
    "title": "Money Laundering and Financing of Terrorism (Prevention) (Amendment) Act, 2016",
    "kind": "law",
-   "enacted": null,
-   "published": null,
+   "enacted": "2016-09-16",
+   "published": "2016-09-28",
    "url": "https://eswatinilii.org/akn/sz/act/2016/5",
    "temporary_until": null,
    "restores": null,
@@ -83,8 +91,8 @@
    "label": "Act 11 of 2017",
    "title": "Suppression of Terrorism (Amendment) Act, 2017",
    "kind": "law",
-   "enacted": null,
-   "published": null,
+   "enacted": "2017-08-08",
+   "published": "2017-08-25",
    "url": "https://eswatinilii.org/akn/sz/act/2017/11",
    "temporary_until": null,
    "restores": null,
@@ -1763,8 +1771,8 @@
     },
     {
      "from": "2017-08-25",
-     "source_url": "https://web.archive.org/web/20260420024554id_/https://eswatinilii.org/akn/sz/act/2008/3/eng@2017-08-25",
-     "sha256": "5af662aac3857e1957888a8906027f047c337a2766767a74b75accffdf0560a9",
+     "source_url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-17/segments/1775805909571.51/warc/CC-MAIN-20260420022045-20260420052045-00537.warc.gz#bytes=179073101-179111702",
+     "sha256": "df04c464534e0d614cb25252243e7e2bd231d47526dbc3986d9b2a2f7fe789ec",
      "changes": {
       "sec-002": {
        "label": "Section 2",
@@ -2355,8 +2363,8 @@
     },
     {
      "from": "2016-09-28",
-     "source_url": "https://web.archive.org/web/20260310214431id_/https://eswatinilii.org/akn/sz/act/2011/6/eng@2016-09-28",
-     "sha256": "552cc9400f10045bd2e669727b46e160112469fd35905d82be4c61d7ab24ab78",
+     "source_url": "https://data.commoncrawl.org/crawl-data/CC-MAIN-2026-12/segments/1772687277908.12/warc/CC-MAIN-20260310210210-20260311000210-00423.warc.gz#bytes=158155739-158247457",
+     "sha256": "371215b0f358437c8228764454bb16bd7a36e2c975ffa8c37ca80455cdc9df5e",
      "changes": {
       "sch-02": {
        "label": "Schedule 2 (Under section 26)",
@@ -2807,13 +2815,21 @@
  ],
  "applies": [],
  "decisions": [
+  "Acts were chosen by what the archived source supports. Of the 361 EswatiniLII works with archived expression pages (one Internet Archive CDX query, 2026-10-28) and the 105 in Common Crawl (crawls 2022 to 2026), only a few have more than one dated expression with text. Phase 1 takes the Constitution (one expression) and the two acts whose every expression is archived with text and whose amending Act is named: the Suppression of Terrorism Act 2008 (amended by Act 11 of 2017) and the Money Laundering and Financing of Terrorism (Prevention) Act 2011 (amended by Act 5 of 2016).",
+  "The Employment Act 1980 and the Companies Act 2009 were not taken: EswatiniLII's only archived expression with text is dated 1 December 1998 and marked \"Consolidation\" for both, a date before the Companies Act 2009 was even made, so it is a placeholder, not the date the text was in force. Their other archived expressions (Employment Act 1981-01-01, Companies Act 2010-04-01; 2023 captures) carry no text. Most other EswatiniLII acts share this 1998-12-01 date or have one expression only.",
+  "EswatiniLII marks the Constitution and the Money Laundering and Financing of Terrorism (Prevention) Act 2011 with \"[Note: The original publication document is not available and this content could not be verified.]\" The text is EswatiniLII's; it was not compared with the Gazette, because the Gazette copies are scans and no OCR is used.",
+  "Money Laundering and Financing of Terrorism (Prevention) Act 2011: EswatiniLII states \"Commenced on 23 March 2012 by Money Laundering and Financing of Terrorism (Prevention) (Amendment) Act, 2016\", and the 2016 Act's page lists it as commencing the 2011 Act. The first version is dated 2012-03-23 as stated; this commencement was fixed by an Act of 2016.",
+  "In the Suppression of Terrorism Act, section 28's editorial note reads \"[paragraph (e) substituted by section 5 of Act 11 of 2017]\" but links to /akn/sz/act/2011/11; the credit follows the note's words and the History tab, which names only Act 11 of 2017 for that version.",
+  "Licence and terms: EswatiniLII (the Judiciary of Eswatini) licenses its primary and secondary law content CC BY-NC 4.0, crediting EswatiniLII as the source, and its terms say \"Scraping and bulk downloading from this website is strictly prohibited\"; its robots.txt sends Content-Signal search=yes, ai-train=no, use=reference and Crawl-delay 5. No EswatiniLII document page was fetched: every page is read from the Internet Archive's copy (the Common Crawl copies were checked and added nothing), for the configured acts only. Seven of EswatiniLII's open listing pages (/legislation/?years=Y, robots-allowed) were read directly at 5 s spacing. The user decided on 2026-10-28 that reading archived copies is acceptable (relayed by the coordinator: \"scraping wayback is fair game, dont overdo it\"). The repository stays private; CC BY-NC allows only non-commercial use. No legal text was given to a model.",
   "Version dates are EswatiniLII's expression dates. Laws.Africa's terminology guide (https://docs.laws.africa/getting-started/terminology-guide) says \"Amendments to Principal works come into force on the Commencement date of the Amending work\" and that the first point in time is \"the work as originally published\"; so an amendment's expression is dated by its commencement (in force), and an act's original expression by its publication, which is replaced by the commencement date the page states.",
   "Credits: a version whose History names exactly one amending law (and no consolidation) between it and the previous version is credited to that law for every provision that changed. Otherwise a provision is credited only to laws that EswatiniLII's editorial note inside that provision links to; the rest are unexplained (publisher).",
   "Editorial notes (akn-remark) are left out of the text and used only as credit evidence, except where a provision has no other text (repealed or spent), where the note is the provision's whole printed content.",
   "Part, Chapter and Division headings are left out; each provision file starts with its own number and heading. Every other text of each version is in a provision file: parse.py checks this per version (verification.json, fidelity).",
   "Constitution: the first version is dated 2006-02-08, the commencement date EswatiniLII states (\"Commenced on 8 February 2006 by Constitution of the Kingdom of Swaziland (Date of Commencement) Proclamation, 2006\"), not 2005-07-26, the date of its expression (Gazette publication).",
   "Suppression of Terrorism Act: the first version is dated 2008-05-11, the commencement date EswatiniLII states (\"Commenced on 11 May 2008\"), not 2008-04-11, the date of its expression (Gazette publication).",
-  "MLFTP Act: the first version is dated 2012-03-23, the commencement date EswatiniLII states (\"Commenced on 23 March 2012 by Money Laundering and Financing of Terrorism (Prevention) (Amendment) Act, 2016\"), not 2011-08-23, the date of its expression (Gazette publication)."
+  "MLFTP Act: the first version is dated 2012-03-23, the commencement date EswatiniLII states (\"Commenced on 23 March 2012 by Money Laundering and Financing of Terrorism (Prevention) (Amendment) Act, 2016\"), not 2011-08-23, the date of its expression (Gazette publication).",
+  "Act 5 of 2016 (Money Laundering and Financing of Terrorism (Prevention) (Amendment) Act, 2016): its EswatiniLII page has no text (PDF only), so its dates come from the page's History tab (https://web.archive.org/web/20260420221703id_/https://eswatinilii.org/akn/sz/act/2016/5/eng@2016-09-28): assented to 2016-09-16, \"Published in Swaziland Gvernment Gazette extraordinary 118\" on 2016-09-28, commenced 2016-09-28; its changes are dated 2016-09-28, the same day.",
+  "Act 11 of 2017 (Suppression of Terrorism (Amendment) Act, 2017): its EswatiniLII page has no text (PDF only), so its dates come from the page's History tab (https://web.archive.org/web/20260418004949id_/https://eswatinilii.org/akn/sz/act/2017/11/eng@2017-08-25): assented to 2017-08-08, \"Published in Swaziland Gvernment Gazette supplement 99\" on 2017-08-25, commenced 2017-08-25; its changes are dated 2017-08-25, the same day."
  ],
  "ai_use": [
   "Claude Code (Claude Opus 5.5, claude-opus-5-5) wrote the adapter and configuration and chose the acts. No model wrote, summarised or transformed legal text: parse.py is deterministic code."
