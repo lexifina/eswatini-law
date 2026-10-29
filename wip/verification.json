@@ -70,6 +70,16 @@
    "ours": "2017-08-25"
   }
  },
+ "check": {
+  "acts": 3,
+  "backwards": 0,
+  "future_dated": 0,
+  "merges": 0,
+  "mismatches": 0,
+  "missing_in_force": 0,
+  "trailer_errors": 0,
+  "versions": 5
+ },
  "fidelity": {
   "constitution@2005-07-26": {
    "text_outside_units_chars": 0,
