@@ -36,10 +36,7 @@ MISSING = """
 readme = HERE / "repo" / "README.md"
 t = readme.read_text(encoding="utf-8")
 if "## What is missing" not in t:
-    t = t.replace("
-## How it is built", MISSING + "
-## How it is built", 1)
-    readme.write_text(t, encoding="utf-8", newline="
-")
+    t = t.replace("\n## How it is built", MISSING + "\n## How it is built", 1)
+    readme.write_text(t, encoding="utf-8", newline="\n")
 (HERE / "verification.json").write_text(json.dumps(report, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 print(json.dumps(peachjam.summary(corpus, report), indent=1))

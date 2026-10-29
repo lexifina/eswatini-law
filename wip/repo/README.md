@@ -79,6 +79,12 @@ The author of a commit is the law that made the change, with an e-mail address t
 - **Amendments not yet applied.** Where the LII lists an amendment as not yet applied to its consolidated text, it is not in this history; REPRODUCE.md lists each one.
 - **No OCR.** Acts the LII shows only as scanned PDFs are not included.
 
+## What is missing
+
+- **The Employment Act 1980, the Companies Act 2009 and most other acts.** EswatiniLII's only archived version with text of each is dated 1 December 1998 and marked "Consolidation", even for Acts of 2009, so that date is a placeholder and cannot date the text. Most other acts have one version only.
+- **The Gazette.** EswatiniLII's Gazette copies (Swaziland Government Gazette Extraordinary 73 of 26 July 2005 for the Constitution; Gazettes 99 of 2017 and 118 of 2016 for the amending Acts) are not archived as text, and scans are not read (no OCR). EswatiniLII itself notes that the original publication of the Constitution and of the Money Laundering Act 2011 "is not available and this content could not be verified".
+- **The amending Acts' own text.** Act 11 of 2017 and Act 5 of 2016 are PDF-only on EswatiniLII; their dates come from their History tabs.
+
 ## How it is built
 
 

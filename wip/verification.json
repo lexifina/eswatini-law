@@ -70,16 +70,6 @@
    "ours": "2017-08-25"
   }
  },
- "check": {
-  "acts": 3,
-  "backwards": 0,
-  "future_dated": 0,
-  "merges": 0,
-  "mismatches": 0,
-  "missing_in_force": 0,
-  "trailer_errors": 0,
-  "versions": 5
- },
  "fidelity": {
   "constitution@2005-07-26": {
    "text_outside_units_chars": 0,
@@ -141,5 +131,12 @@
    "ok": true,
    "page": "https://web.archive.org/web/20260418004949id_/https://eswatinilii.org/akn/sz/act/2017/11/eng@2017-08-25"
   }
+ },
+ "rebuild": {
+  "commits": 5,
+  "history_tip": "f29df3c9f532bafa91e1c9c76cfd09736278a282",
+  "identical": true,
+  "main_identical": true,
+  "tags": 10
  }
 }
