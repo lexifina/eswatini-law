@@ -1862,7 +1862,7 @@
   },
   {
    "slug": "money-laundering",
-   "short": "MLFTP Act",
+   "short": "Money Laundering Act",
    "title": "Money Laundering and Financing of Terrorism (Prevention) Act, 2011",
    "url": "https://eswatinilii.org/akn/sz/act/2011/6",
    "first_law": "act-2011-6",
@@ -2827,7 +2827,7 @@
   "Part, Chapter and Division headings are left out; each provision file starts with its own number and heading. Every other text of each version is in a provision file: parse.py checks this per version (verification.json, fidelity).",
   "Constitution: the first version is dated 2006-02-08, the commencement date EswatiniLII states (\"Commenced on 8 February 2006 by Constitution of the Kingdom of Swaziland (Date of Commencement) Proclamation, 2006\"), not 2005-07-26, the date of its expression (Gazette publication).",
   "Suppression of Terrorism Act: the first version is dated 2008-05-11, the commencement date EswatiniLII states (\"Commenced on 11 May 2008\"), not 2008-04-11, the date of its expression (Gazette publication).",
-  "MLFTP Act: the first version is dated 2012-03-23, the commencement date EswatiniLII states (\"Commenced on 23 March 2012 by Money Laundering and Financing of Terrorism (Prevention) (Amendment) Act, 2016\"), not 2011-08-23, the date of its expression (Gazette publication).",
+  "Money Laundering Act: the first version is dated 2012-03-23, the commencement date EswatiniLII states (\"Commenced on 23 March 2012 by Money Laundering and Financing of Terrorism (Prevention) (Amendment) Act, 2016\"), not 2011-08-23, the date of its expression (Gazette publication).",
   "Act 5 of 2016 (Money Laundering and Financing of Terrorism (Prevention) (Amendment) Act, 2016): its EswatiniLII page has no text (PDF only), so its dates come from the page's History tab (https://web.archive.org/web/20260420221703id_/https://eswatinilii.org/akn/sz/act/2016/5/eng@2016-09-28): assented to 2016-09-16, \"Published in Swaziland Gvernment Gazette extraordinary 118\" on 2016-09-28, commenced 2016-09-28; its changes are dated 2016-09-28, the same day.",
   "Act 11 of 2017 (Suppression of Terrorism (Amendment) Act, 2017): its EswatiniLII page has no text (PDF only), so its dates come from the page's History tab (https://web.archive.org/web/20260418004949id_/https://eswatinilii.org/akn/sz/act/2017/11/eng@2017-08-25): assented to 2017-08-08, \"Published in Swaziland Gvernment Gazette supplement 99\" on 2017-08-25, commenced 2017-08-25; its changes are dated 2017-08-25, the same day."
  ],
