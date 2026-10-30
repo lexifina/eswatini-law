@@ -1,0 +1,122 @@
+{
+ "retrieved": "2026-10-30",
+ "lii": {
+  "name": "EswatiniLII",
+  "hosts": [
+   "eswatinilii.org"
+  ],
+  "cc": "sz",
+  "path_prefixes": [
+   ""
+  ],
+  "listing_prefix": "",
+  "listing": false
+ },
+ "country": {
+  "code": "SZ",
+  "name": "Eswatini",
+  "slug": "eswatini",
+  "lang": "en",
+  "tz": "Africa/Mbabane",
+  "future_branch": "future",
+  "publisher": {
+   "name": "EswatiniLII",
+   "email": "eswatinilii@eswatinilii.invalid"
+  },
+  "default_in_force_rule": {
+   "text": "Not applied: every version is dated by EswatiniLII's own expression date, or by the commencement date EswatiniLII states for the act as published. No date is computed from a default rule.",
+   "source": "https://eswatinilii.org/legislation/"
+  },
+  "licence_note": "Source: EswatiniLII (https://eswatinilii.org), licensed under the Creative Commons Attribution-NonCommercial 4.0 International licence (CC BY-NC 4.0)."
+ },
+ "sources": [
+  {
+   "name": "EswatiniLII (the Judiciary of Eswatini, on the Laws.Africa Peachjam platform)",
+   "url": "https://eswatinilii.org",
+   "retrieved": "2026-10-30",
+   "requests": "count",
+   "licence": "CC BY-NC 4.0, crediting EswatiniLII as the source (https://eswatinilii.org/terms-of-use/)",
+   "notes": "Point-in-time expressions of each act, /akn/sz/act/<year>/<num>/eng@<date>, each read from an archived copy of the page; copies and sha256s are pinned."
+  },
+  {
+   "name": "Internet Archive Wayback Machine",
+   "url": "https://web.archive.org",
+   "retrieved": "2026-10-30",
+   "requests": null,
+   "licence": "Archived copies of EswatiniLII pages; the content licence is EswatiniLII's",
+   "notes": "Archived copies of EswatiniLII expression pages, pinned by timestamp."
+  }
+ ],
+ "acts": [
+  {
+   "work": "2006/3",
+   "slug": "prevention-of-corruption-act",
+   "short": "Prevention of Corruption Act",
+   "title": "Prevention of Corruption Act, 2006",
+   "label": "Act 3 of 2006",
+   "part": "71-prevention-of-corruption-act",
+   "decisions": [
+    "Prevention of Corruption Act: EswatiniLII's History lists no amendment after commencement (archived copy of 2026); the one version is the Act as published, dated by its commencement.",
+    "Prevention of Corruption Act: EswatiniLII notes on the page: \"The original publication document is not available and this content could not be verified.\" The text is EswatiniLII's, copied as published."
+   ]
+  },
+  {
+   "work": "2001/8",
+   "slug": "serious-offences-confiscation-of-proceeds-act",
+   "short": "Serious Offences (Confiscation of Proceeds) Act",
+   "title": "Serious Offences (Confiscation of Proceeds) Act, 2001",
+   "label": "Act 8 of 2001",
+   "part": "73-serious-offences-confiscation-of-proceeds-act",
+   "decisions": [
+    "Serious Offences (Confiscation of Proceeds) Act: EswatiniLII's History lists no amendment after commencement; the one version is the Act as published (Gazette 752 of 2001-09-21), dated by its stated commencement."
+   ]
+  }
+ ],
+ "decisions": [],
+ "ai_use": [
+  "Claude Code (Claude Opus 5.5, claude-opus-5-5) wrote the adapter and configuration and chose the acts. No model wrote, summarised or transformed legal text: parse.py is deterministic code."
+ ],
+ "law_pages": true,
+ "law_pages_pinned": {
+  "/akn/sz/act/2016/5": {
+   "expression": "2016-09-28",
+   "capture": "20260420221703"
+  },
+  "/akn/sz/act/2017/11": {
+   "expression": "2017-08-25",
+   "capture": "20260418004949"
+  }
+ },
+ "skipped": [
+  {
+   "work": "2000/1",
+   "slug": "industrial-relations-act",
+   "short": "Industrial Relations Act",
+   "title": "Industrial Relations Act, 2000",
+   "label": "Act 1 of 2000",
+   "part": "70-industrial-relations-act",
+   "why": "no archived copy holds the text (every Common Crawl and Internet Archive capture of eng@2000-06-07 lacks the document body)"
+  },
+  {
+   "work": "1980/5",
+   "why": "only text copies are the 1998-12-01 placeholder Consolidation expression"
+  },
+  {
+   "work": "2009/8",
+   "why": "only text copies are the 1998-12-01 placeholder Consolidation expression"
+  },
+  {
+   "work": "1938/67",
+   "why": "only text copies are the 1998-12-01 placeholder Consolidation expression"
+  },
+  {
+   "work": "2012/6",
+   "slug": "childrens-protection-and-welfare-act",
+   "short": "Children's Protection and Welfare Act",
+   "title": "Children's Protection and Welfare Act, 2012",
+   "label": "Act 6 of 2012",
+   "part": "72-childrens-protection-and-welfare-act",
+   "why": "no archived copy holds the text (every capture of eng@2012-11-16 lacks the document body)"
+  }
+ ]
+}
