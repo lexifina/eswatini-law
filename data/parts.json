@@ -1,0 +1,17 @@
+{
+ "parts": {
+  "71-prevention-of-corruption-act.json": {
+   "acts": [
+    "prevention-of-corruption-act"
+   ],
+   "sha256": "00bf05d95ea2cf01bd527a0ad9e530bacd3909a8ad38398bbbf7b34d3aef5542"
+  },
+  "73-serious-offences-confiscation-of-proceeds-act.json": {
+   "acts": [
+    "serious-offences-confiscation-of-proceeds-act"
+   ],
+   "sha256": "39703346e0359f2d565fb100d1422c4f1b01ca40da369aaf1940f2fa57a993c4"
+  }
+ },
+ "schema": 1
+}
