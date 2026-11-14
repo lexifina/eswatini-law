@@ -1,107 +1,87 @@
 # Eswatini: law history in git
 
+
+The law of Eswatini as a git history: one file per provision, one commit per version on the day it took effect, and the law that made each change as the commit's author. `git blame` names the law behind every paragraph; `git log` lists every change to a provision; picking a date gives the text in force that day.
+
 Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Eswatini's national law, which global-law reads at `eswatini/national/acts/`.
 
-The law of Eswatini as a git history: one file per provision, one commit per law on the day it took effect, and the law that made each change as the commit's author. `git blame` names the law behind every paragraph; `git log` lists every change to a provision; `tools/on.py` gives the text in force on any day.
+**What is in it now:** five acts from EswatiniLII: the Constitution of the Kingdom of Swaziland, 2005, the Serious Offences (Confiscation of Proceeds) Act, 2001, the Prevention of Corruption Act, 2006, the Suppression of Terrorism Act, 2008 and the Money Laundering and Financing of Terrorism (Prevention) Act, 2011; 7 versions from 2001 to 2017, in 533 files, made by the five acts and two amending Acts. [`REPRODUCE.md`](REPRODUCE.md) lists every act with its versions; [`data/laws.csv`](data/laws.csv) lists every law with the days it was enacted, published and took effect.
 
-It follows the shared design of [lexifina/global-law](https://github.com/lexifina/global-law), which places it at `sz/`. Every version is a dated point-in-time version published by [EswatiniLII](https://eswatinilii.org) on the Laws.Africa Peachjam platform.
+Each act is a folder, with one file per section or schedule and a `README.md` listing its provisions and their changes (`suppression-of-terrorism/sec-005.md` is section 5 of the Suppression of Terrorism Act, 2008, Act 3 of 2008). The Constitution is in `constitution/` (`sec-024.md` is section 24, protection of freedom of expression).
 
-**What is in it now**
+The text is in English, as EswatiniLII prints it.
 
-| Folder | Act | Versions | History |
-| --- | --- | ---: | --- |
-| `constitution/` | [Constitution of the Kingdom of Swaziland, 2005](https://eswatinilii.org/akn/sz/act/2005/1) | 1 | 2006-02-08 to 2006-02-08 |
-| `suppression-of-terrorism/` | [Suppression of Terrorism Act, 2008](https://eswatinilii.org/akn/sz/act/2008/3) | 2 | 2008-05-11 to 2017-08-25 |
-| `money-laundering/` | [Money Laundering and Financing of Terrorism (Prevention) Act, 2011](https://eswatinilii.org/akn/sz/act/2011/6) | 2 | 2012-03-23 to 2016-09-28 |
-
-**Constitution of the Kingdom of Swaziland, 2005**
-
-| In force | Author |
-| --- | --- |
-| 2006-02-08 | Act 1 of 2005 (as enacted) |
-
-**Suppression of Terrorism Act, 2008**
-
-| In force | Author |
-| --- | --- |
-| 2008-05-11 | Act 3 of 2008 (as enacted) |
-| 2017-08-25 | Act 11 of 2017 |
-
-**Money Laundering and Financing of Terrorism (Prevention) Act, 2011**
-
-| In force | Author |
-| --- | --- |
-| 2012-03-23 | Act 6 of 2011 (as enacted) |
-| 2016-09-28 | Act 5 of 2016 |
-
-Each folder's `README.md` lists every provision, how often it changed and when.
-
-## A lawyer's questions as git commands
+## Questions as git commands
 
 | Question | Command |
 | --- | --- |
-| What did sec-001 say on 2006-02-08? | `python tools/on.py 2006-02-08 constitution sec-001` |
-| The same, with raw git (bash) | `git show $(git rev-list -1 --before="2006-02-08T23:59:59Z" main -- constitution/sec-001.md):constitution/sec-001.md` |
-| The same, in PowerShell | `$r = git rev-list -1 --before="2006-02-08T23:59:59Z" main -- constitution/sec-001.md; git show "$($r):constitution/sec-001.md"` |
-| Which law wrote each line? | `git blame constitution/sec-001.md` |
-| Every change, word by word | `git log -p --word-diff constitution/sec-001.md` |
-| Every law in the record, in order | `git log --reverse --format="%ad %an" --date=short main` |
-| Everything one law changed | `git show law/<key>` (tags `law/<key>` mark each law's commit) |
-| The whole act on a date | `python tools/on.py 2006-02-08 constitution` |
-| Which law gave a provision its wording on a date | `python tools/on.py --law 2006-02-08 constitution sec-001` |
+| Every change to section 5 of the Suppression of Terrorism Act | `git log -p --word-diff -- suppression-of-terrorism/sec-005.md` |
+| Which law wrote each line of section 5? | `git blame suppression-of-terrorism/sec-005.md` |
+| Every version of the Act, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- suppression-of-terrorism ':!*/README.md'` |
+| Section 5 as in force on 1 January 2015 | `python tools/on.py 2015-01-01 suppression-of-terrorism sec-005` |
 
-After a rebuild, refresh tags with `git fetch --force --tags`: a plain fetch keeps stale tags.
+**Outside git**, we also host this record publicly, for free:
+
+- **[Ask Claude about Eswatini law](https://global-law.lexifina.com/v1/try_claude?country=eswatini)**: opens Claude with a first question ready.
+- **[Ask ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=eswatini)**: the same question in ChatGPT.
+- **[Call the API in your browser](https://global-law.lexifina.com/v1/search_law?query=freedom+of+expression&jurisdictions=eswatini)**: a search of Eswatini law for "freedom of expression", returned as JSON. See the [documentation here](https://lexifina.com/api/global-law).
+
+Both assistants read the record through the free Global law connector (MCP, `https://global-law.lexifina.com/mcp`); the first time, the chat gives you the link that adds it. Ask in English.
+
+**Host it yourself easily.** All it takes is git and Python, and the tools run on your machine:
+
+```sh
+git clone --depth 1 https://github.com/lexifina/global-law && cd global-law
+python3 tools/countries.py add eswatini/national/acts
+python3 tools/law.py show 2026-01-01 eswatini/national/acts/suppression-of-terrorism/sec-005.md
+```
+
+Opened in Claude Code, Cursor, VS Code or Codex, the clone also starts a local MCP server with the same tools ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
 
 ## Dates
 
-- Each commit is dated at **noon, Africa/Mbabane, on the day the change took effect**. The day is also in the `In-force:` trailer, which the tools read; enactment (assent) and Gazette publication dates are trailers too, where EswatiniLII states them.
-- **The day is EswatiniLII's.** Each version is a Laws.Africa expression, and its date is the day the amendment it takes in came into force, as the amendment list says ("[Amended by <Act> on <date>]"). For a consolidation (a revised edition) it is the date the edition is as at. An act's original expression is dated by its Gazette publication; where EswatiniLII gives a later commencement date ("Commenced on ..."), the first version is dated by that instead (see REPRODUCE.md, decisions).
-- `--before="YYYY-MM-DD"` alone uses your clock's time of day, so a law that took effect that day may be missed before noon. Use `T23:59:59Z` as above, or the tool.
+Each commit is dated at noon, Africa/Mbabane, on the day the version took effect, and carries it in its `In-force:` trailer (with `Enacted:` and `Published:` where EswatiniLII gives them):
+
+- for the first version of an act, the commencement day EswatiniLII states ("Commenced on 8 February 2006 by Constitution of the Kingdom of Swaziland (Date of Commencement) Proclamation, 2006"), not the day it was published in the Gazette (26 July 2005);
+- for an amendment, the day of EswatiniLII's version that takes it in, the amending Act's commencement: Act 5 of 2016 and Act 11 of 2017 both took effect on the day they were published (28 September 2016, 25 August 2017);
+- the Money Laundering Act's first version is dated 23 March 2012, the commencement EswatiniLII states, which Act 5 of 2016 fixed.
+
+Each change is credited to the amending Act EswatiniLII's History names for that version (`Act 11 of 2017 <act-2017-11@eswatinilii.invalid>`), and the first version of each act to the act itself, as enacted. A version taking in several Acts would be credited provision by provision from EswatiniLII's editorial notes, the rest to the publisher; none does so far.
 
 ## How it is checked
 
-- Every version is read back from git on the day it took effect and on the day before (`tools/check_repo.py`); both must match `corpus.json`. Results are in `REPRODUCE.md`.
-- **Against EswatiniLII today:** the last version of each act is EswatiniLII's current expression, as named by its own legislation listing on the retrieval day, and is the text of that expression page.
-- **Every version is its own dated expression**: each was parsed from an archived copy of exactly that expression's page, whose sha256 is recorded with the version.
-- The repository is rebuilt from the same data a second time and must give identical hashes.
-
-## What "author" means
-
-The author of a commit is the law that made the change, with an e-mail address that cannot exist, so `git blame` and `git log --author` name laws. The committer is always Lexifina.
-
-- **Credits come only from EswatiniLII's own notes.** A version whose History entry names one amending Act is credited to it. Where one version takes in several Acts, or a revised edition, a provision is credited to an Act only if EswatiniLII's editorial note in that provision names it ("[section 5 amended by section 2 of Act 3 of 2020]"); the rest are committed by the publisher and labelled "unexplained", and the commit message names the Acts the version takes in.
-- **The first commit** is the act as enacted where that is the oldest version; otherwise it is the oldest version available (a consolidation), credited to the publisher.
-- Blame credits whole lines (one paragraph per line). Use `git log -p --word-diff` to see exactly which words each change made.
+- `tools/check_repo.py` reads every version back from git on the day it took effect and on the day before, and compares it with the corpus: 7 versions of 5 acts, 0 mismatches (see [`REPRODUCE.md`](REPRODUCE.md)).
+- Each version is parsed from a copy of that version's own EswatiniLII page, whose sha256 is in `data/versions.json`; the newest version of each act is the one EswatiniLII lists as current, or the act's History lists no later amendment.
+- A second build from the same corpus gave identical hashes for all 7 commits and 14 tags.
+- No merge commits, no commit dates going backwards, none dated after the build, and every commit's trailers parse.
 
 ## What it does not show
 
-- **Only the versions EswatiniLII publishes.** Changes before its oldest version are not separate commits.
-- **Editorial notes.** EswatiniLII's bracketed notes ("[Act No. 18 of 1996]", "[section 5 amended by ...]") are left out of the text and used only for credits, except where a provision has no other text (repealed or spent), where the note is what EswatiniLII prints and is kept.
-- **Headings above the provision** (Part, Chapter, Division) are left out; each file starts with its own number and heading. Footnotes are kept at the end of the file.
-- **Amendments not yet applied.** Where the LII lists an amendment as not yet applied to its consolidated text, it is not in this history; REPRODUCE.md lists each one.
-- **No OCR.** Acts the LII shows only as scanned PDFs are not included.
-
-## What is missing
-
-- **The Employment Act 1980, the Companies Act 2009 and most other acts.** EswatiniLII's only archived version with text of each is dated 1 December 1998 and marked "Consolidation", even for Acts of 2009, so that date is a placeholder and cannot date the text. Most other acts have one version only.
-- **The Gazette.** EswatiniLII's Gazette copies (Swaziland Government Gazette Extraordinary 73 of 26 July 2005 for the Constitution; Gazettes 99 of 2017 and 118 of 2016 for the amending Acts) are not archived as text, and scans are not read (no OCR). EswatiniLII itself notes that the original publication of the Constitution and of the Money Laundering Act 2011 "is not available and this content could not be verified".
-- **The amending Acts' own text.** Act 11 of 2017 and Act 5 of 2016 are PDF-only on EswatiniLII; their dates come from their History tabs.
-
-## How it is built
-
-Lexifina reads the sources listed here and records each act's dated versions, and the laws that made each change, in one corpus file. `tools/build.py` writes this repository from that file, and the same corpus always gives the same commit hashes; `REPRODUCE.md` gives the details and the checks. A model (Claude) wrote Lexifina's code; it wrote no legal text, and no model runs when the history is built.
+- **Most Eswatini law.** Only these five acts: no other act, no subsidiary legislation and no case law. Acts were chosen by what the archived pages support; the archived pages hold the Employment Act 1980 and the Companies Act 2009, for example, only in a version dated 1 December 1998 and marked "Consolidation", a placeholder that cannot date the text.
+- **Other versions.** The Constitution, the Prevention of Corruption Act and the Serious Offences Act have one version each; amendments EswatiniLII has not consolidated, and anything after the record was retrieved (28 and 30 October 2026), are not here.
+- **The Gazette text.** The text was not compared with the Government Gazette, whose copies are scans (no OCR is used); EswatiniLII itself notes for the Constitution, the Money Laundering Act and the Prevention of Corruption Act that the original publication "is not available and this content could not be verified".
+- **Editorial notes and headings.** EswatiniLII's bracketed notes are left out of the text (unless a provision has no other text) and used only for credits, and Part and Chapter headings are left out; each file starts with its own number and heading.
+- **The amending Acts' own text.** Act 5 of 2016 and Act 11 of 2017 are PDF only on EswatiniLII; their changes are here as its consolidated versions print them.
 
 ## Sources
 
-| Source | What it gives | Used for |
-| --- | --- | --- |
-| [EswatiniLII](https://eswatinilii.org) | Dated point-in-time versions (expressions) of each act, its History and amendment list, and per-provision editorial notes; its listing page names the current version | The text and dates of every version |
-| [Internet Archive](https://web.archive.org/) | Archived copies of those expression pages | Reading them |
+| Source | Kind | Past versions | Notes |
+| --- | --- | --- | --- |
+| [EswatiniLII](https://eswatinilii.org) (the Judiciary of Eswatini, on Laws.Africa's Peachjam platform) | Legal information institute | yes, dated point-in-time versions of each act | Each version's text, its History and amendment list, and per-provision editorial notes; read from the Internet Archive's copies of its pages |
 
 ## Licence
 
-See [LICENSE](LICENSE). Source: EswatiniLII (https://eswatinilii.org), licensed under the Creative Commons Attribution-NonCommercial 4.0 International licence (CC BY-NC 4.0).
+See [`LICENSE`](LICENSE). EswatiniLII licenses its content CC BY-NC 4.0, crediting EswatiniLII as the source, so the texts may be used only for non-commercial purposes; Lexifina's arrangement of the history, the commit messages, the tables and the tools are CC0 1.0.
 
-EswatiniLII's terms: CC BY-NC 4.0, crediting EswatiniLII as the source (https://eswatinilii.org/terms-of-use/). Lexifina's arrangement, messages, tables and tools are CC0.
+No AI model wrote, translated or corrected legal text; the scripts that read the sources and build this repository were written by an AI model (see [`REPRODUCE.md`](REPRODUCE.md)).
 
-This repository is not legal advice. Eswatini's laws are published in English, so there is no separate summary in another language.
+## More
+
+From [lexifina/global-law](https://github.com/lexifina/global-law):
+
+- [FEATURES.md](https://github.com/lexifina/global-law/blob/main/FEATURES.md): every feature, and what every corpus must support (`git blame`, `law.py`, the MCP tools)
+- [FAQ.md](https://github.com/lexifina/global-law/blob/main/FAQ.md): questions and answers · [CONTRIBUTING.md](https://github.com/lexifina/global-law/blob/main/CONTRIBUTING.md): proposing changes · [MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md): the MCP server · [REPRODUCE.md](https://github.com/lexifina/global-law/blob/main/REPRODUCE.md): how it was built · [CHANGELOG.md](https://github.com/lexifina/global-law/blob/main/CHANGELOG.md)
+- [FRESHNESS.md](https://github.com/lexifina/global-law/blob/main/FRESHNESS.md): how current each corpus is · [Monitoring](https://github.com/lexifina/global-law/tree/main/monitoring): whether updates are running · [WATCHING.md](https://github.com/lexifina/global-law/blob/main/WATCHING.md): how each official source is watched for changes
+- [performance/](https://github.com/lexifina/global-law/tree/main/performance): how fast the tools are, measured
+- [visualisations/](https://github.com/lexifina/global-law/tree/main/visualisations): charts and bridges across the world's law
+- [Vulnerabilities](https://github.com/lexifina/global-law/tree/main/vulnerabilities): mistakes in legislation as published
