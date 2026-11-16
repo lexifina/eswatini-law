@@ -59,6 +59,7 @@ Each change is credited to the amending Act EswatiniLII's History names for that
 - Each version is parsed from a copy of that version's own EswatiniLII page, whose sha256 is in `data/versions.json`; the newest version of each act is the one EswatiniLII lists as current, or the act's History lists no later amendment.
 - A second build from the same corpus gave identical hashes for all 7 commits and 14 tags.
 - No merge commits, no commit dates going backwards, none dated after the build, and every commit's trailers parse.
+- [vulnerabilities/](vulnerabilities/): possible drafting mistakes in this law, found by global-law's detectors and checked by hand. Not run yet.
 
 ## What it does not show
 
@@ -79,6 +80,10 @@ Each change is credited to the amending Act EswatiniLII's History names for that
 See [`LICENSE`](LICENSE). EswatiniLII licenses its content CC BY-NC 4.0, crediting EswatiniLII as the source, so the texts may be used only for non-commercial purposes; Lexifina's arrangement of the history, the commit messages, the tables and the tools are CC0 1.0.
 
 No AI model wrote, translated or corrected legal text; the scripts that read the sources and build this repository were written by an AI model (see [`REPRODUCE.md`](REPRODUCE.md)).
+
+## Visualisations
+
+- [visualisations/](visualisations/): charts drawn from this repository. Not drawn yet.
 
 ## More
 
