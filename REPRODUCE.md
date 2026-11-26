@@ -2,6 +2,16 @@
 
 This file is written by the build on 2026-10-30, the day the source data was retrieved.
 
+## Since November 2026
+
+Further versions are built by the runner in `scripts/eswatini-law/runner/` (Lexifina's working tree, not in this
+repository): `sz_fetch.py` downloads PDFs from the Judiciary of Eswatini (`/legislation`), the Internet Archive's
+copies of gov.sz and parliament.gov.sz PDFs (listed with the Wayback CDX API, read in raw `id_` form), FAOLEX records
+for Eswatini (from FAOLEX's public sitemaps) and WIPO Lex (profile SZ), about one request a second per host;
+`sz_parse.py` reads each PDF's own text layer (no OCR; scans are skipped) and splits it into sections; `sz_build.py`
+dates each text by the rules in [`STRUCTURE.md`](STRUCTURE.md) and appends one commit per version with `git
+fast-import`, fast-forward only. Corrections are appended as `Kind: correction` commits; history is never rewritten.
+
 ## Sources
 
 | Source | Address | Retrieved | Licence |
