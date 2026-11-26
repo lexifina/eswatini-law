@@ -1,0 +1,29 @@
+{
+  "corpus": "sz/national/acts",
+  "name": "Eswatini law: the Constitution, Acts and subsidiary legislation of the Kingdom of Eswatini",
+  "label": "Eswatini",
+  "language": "en",
+  "dates": {
+    "commit": "in-force",
+    "other_trailers": [
+      "In-force-basis",
+      "Source",
+      "Kind"
+    ],
+    "time": "12:00 Africa/Mbabane (UTC+2)"
+  },
+  "in_force_trailer": "In-force",
+  "has_future_branch": false,
+  "author": "the enacting Act for an Act as enacted; else the publisher of the text",
+  "citation": {
+    "file": "((?:acts|subsidiary)/[0-9]{4}/[^/]+|constitution)/sec-0*([0-9]+[a-z-]*)\\.md",
+    "cites": "(^|[^0-9])(section|s\\.?) ?{n}\\b"
+  },
+  "sources": [
+    "https://www.judiciary.org.sz/legislation",
+    "https://www.gov.sz (Internet Archive copies)",
+    "https://faolex.fao.org",
+    "https://www.wipo.int/wipolex",
+    "https://eswatinilii.org (archived copies)"
+  ]
+}
