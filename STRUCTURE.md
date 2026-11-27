@@ -18,6 +18,7 @@ repeats. `In-force-basis:` says where that day comes from:
 - `commencement`: the text's own "Date of commencement" line;
 - `gazette-publication`: the Government Gazette date, for a text that says it comes into force on publication;
 - `deemed-commencement`: the text's own "deemed to have come into force on" provision;
+- `stated-commencement`: the text's own "shall come into force on <day>" provision;
 - `commencement-notice`: the day a (Commencement) Notice in the Gazette names for the Act;
 - `faolex-entry-into-force` / `wipo-entry-into-force`: the entry-into-force date in the FAOLEX or WIPO Lex record;
 - `publisher-revision`: for a consolidated text (one that cites later amending Acts), the date the publisher gave
