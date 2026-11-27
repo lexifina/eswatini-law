@@ -8,7 +8,7 @@ Further versions are built by the runner in `scripts/eswatini-law/runner/` (Lexi
 repository): `sz_fetch.py` downloads PDFs from the Judiciary of Eswatini (`/legislation`), the Internet Archive's
 copies of gov.sz and parliament.gov.sz PDFs (listed with the Wayback CDX API, read in raw `id_` form), FAOLEX records
 for Eswatini (from FAOLEX's public sitemaps) and WIPO Lex (profile SZ), about one request a second per host;
-`sz_parse.py` reads each PDF's own text layer (no OCR; scans are skipped) and splits it into sections; `sz_build.py`
+`sz_gzfetch.py` downloads Government Gazette issues from the Internet Archive's copies of Gazettes.Africa (closed; listed with the Wayback CDX API for `archive.gazettes.africa/archive/sz/` and `gazettes.africa/archive/sz/`, read in raw `id_` form, one request in flight at first and at most four); `sz_gz.py` splits each Gazette, and each gov.sz Gazette, into its Acts ("(Act No. N of YYYY)" with "I ASSENT") and legal notices ("LEGAL NOTICE NO. N OF YYYY"), skipping Bills, general notices and individual measures (appointments, acting appointments, changes of name); `sz_parse.py` reads each PDF's own text layer (no OCR; scans are skipped) and splits it into sections; `sz_build.py`
 dates each text by the rules in [`STRUCTURE.md`](STRUCTURE.md) and appends one commit per version with `git
 fast-import`, fast-forward only. Corrections are appended as `Kind: correction` commits; history is never rewritten.
 
